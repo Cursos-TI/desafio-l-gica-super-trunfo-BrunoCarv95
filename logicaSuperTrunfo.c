@@ -20,9 +20,9 @@ int main() {
     printf("Estado (letra): ");
     scanf(" %c", &carta1.estado);
     printf("Código (ex: A01): ");
-    scanf("%s", &carta1.codigo);
+    scanf("%s", carta1.codigo);
     printf("Nome da cidade: ");
-    scanf(" %[^\n]", &carta1.nomeCidade);
+    scanf(" %[^\n]", carta1.nomeCidade);
     printf("População: ");
     scanf("%lu", &carta1.populacao);
     printf("Área (em km²): ");
@@ -37,9 +37,9 @@ int main() {
     printf("Estado (letra): ");
     scanf(" %c", &carta2.estado);
     printf("Código (ex: B02): ");
-    scanf("%s", &carta2.codigo);
+    scanf("%s", carta2.codigo);
     printf("Nome da cidade: ");
-    scanf(" %[^\n]", &carta2.nomeCidade);
+    scanf(" %[^\n]", carta2.nomeCidade);
     printf("População: ");
     scanf("%lu", &carta2.populacao);
     printf("Área (em km²): ");
