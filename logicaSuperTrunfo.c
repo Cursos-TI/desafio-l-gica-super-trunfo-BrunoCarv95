@@ -3,8 +3,9 @@
 
 // Estrutura que representa uma carta
 struct Carta {
-    char estado;
+    
     char codigo[4];
+    char estado[2];
     char nomeCidade[30];
     unsigned long int populacao;
     float area;
@@ -18,7 +19,7 @@ int main() {
     // Cadastro da primeira carta
     printf("Cadastro da primeira carta:\n");
     printf("Estado (letra): ");
-    scanf(" %c", &carta1.estado);
+    scanf( "%c", &carta1.estado);
     printf("Código (ex: A01): ");
     scanf("%s", carta1.codigo);
     printf("Nome da cidade: ");
@@ -68,9 +69,8 @@ int main() {
     printf("PIB: %.2f bilhões\n", carta2.pib);
     printf("Pontos turísticos: %d\n", carta2.pontosTuristicos);
 
-    // Atributo a ser comparado
-    // Exemplo: comparar por PIB (você pode trocar por outro manualmente)
-    char atributo[] = "pib";  // Trocar para: "populacao", "area", "pib", "pontos", "densidade"
+    // Comparação dos Atributos
+    char atributo[] = "pib";
 
     printf("\n--- Resultado da Comparação (%s) ---\n", atributo);
 
